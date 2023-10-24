@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+</head>
+<style>
+    body {
+        background-color: #ccc;
+    }
+    :root {
+        --primaryColor: #00b7ff;
+        --secondaryColor: #6c757d;
+    }
+
+    button {
+        font-size: 25px;
+        border: none;
+        padding: 5px 20px;
+        color: white;
+    }
+
+    #primaryBtn {
+        background-color: var(--primaryColor);
+    }
+
+    #secondaryBtn {
+        background-color: var(--secondaryColor);
+    }
+</style>
+
+<body>
+    <h4>Task 1</h4>
+    <p><b>Problem Statement</b><br>
+        Explain the purpose of using the var() function in css. Also you have created two buttons with id named
+        primaryBtn and secondaryBtn which should be given background colors using the var() function. The color
+        code for primaryColor is #00b7ff and secondaryColor is #6c757d.</p>
+        <p><b>Solution:</b>
+            The var() function in CSS is used to reference and use the value of a custom property (also known as a CSS
+            variable) within your stylesheets. CSS variables are defined using the -- prefix followed by a variable name.
+            They allow us to store and reuse values throughout our stylesheet, making it easier to maintain consistency and
+            make global changes. <br><b>Purpose of var() Function:</b></p>
+            <ol>
+                <li>Reusability:</li>
+                <p>CSS variables allow us to store values that we can reuse across our stylesheet. The var()
+                    function lets us reference these values wherever needed, reducing redundancy and making our code
+                    cleaner©</p>
+                <li>Consistency:</li>
+                <p>By using variables, we can ensure consistent values for colors, spacing, fonts, and more
+                    throughout our entire design. Changing a variable's value will automatically update all instances where the
+                    variable is used©</p>
+                <li>Global Changes:</li>
+                <p>If we need to make a design change, we can update the variable's value once, and the
+                    change will be applied to all instances using that variable.</p>
+            </ol>
+    <button id="primaryBtn">Primary Button</button>
+    <button id="secondaryBtn">Secondary Button</button>
+</body>
+
+</html>
